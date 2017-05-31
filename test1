@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WEEK2OOP
+{
+    class Animal
+    {
+        public string animaltype;
+        public Animal()
+        {
+            animaltype = "base animal";
+        }
+        virtual public void Move() {
+            Console.WriteLine("I am moving");
+        }
+        public void Speak()
+        {
+            Console.WriteLine("I am speaking");
+        }
+    }
+
+
+    class Dog : Animal
+    {
+        static void Main(string[] args)
+        {
+            
+    
+        public Dog()
+        {
+            animaltype = "canine"; 
+        }
+        public override void Move()
+        {
+            Console.WriteLine("I chase my tail");
+            //base.Move();
+        }
+        new public void Speak()
+        {
+            Console.WriteLine("bow wow");
+        }
+    }
+
+        }
+    
+
